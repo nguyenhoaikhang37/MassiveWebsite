@@ -1,0 +1,28 @@
+#skill {
+  background: url(../images/4.jpg) center center / cover no-repeat;
+  padding-top: 50%;
+  object-fit: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.skill-left {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  p {
+    font-size: 2rem;
+    letter-spacing: 3px;
+    color: white;
+  }
+}
+
+.skill-right {
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  right: 0;
+}

@@ -1,0 +1,21 @@
+/* Table: width < 1024px */
+@media Screen and (max-width: 46.1875em) {
+  html {
+    font-size: 55%;
+  }
+  #feature {
+    .feature-desc {
+      width: 50rem;
+      margin: 0 auto 10rem;
+    }
+  }
+  .feature {
+    &-content {
+      flex-direction: column;
+    }
+    &-item {
+      width: 100%;
+      margin-bottom: 6rem;
+    }
+  }
+}

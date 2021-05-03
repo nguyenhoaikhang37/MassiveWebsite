@@ -55,6 +55,7 @@ h5 {
 
 p {
   color: #7e7e7e;
+  font-size: 1.5rem;
 }
 /*---------------------INPUT--------------------*/
 input {
@@ -184,8 +185,7 @@ button:hover {
 /*======================EndCode===============================*/
 
 .container {
-  max-width: 1170pxpx;
+  max-width: 1170px;
   margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 10rem 3rem;
 }
