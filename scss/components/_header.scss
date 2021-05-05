@@ -177,7 +177,7 @@ img {
   top: 50%;
   left: 30%;
   transform: translate(-50%, -50%);
-
+  max-width: 40rem;
   h3 {
     font-weight: 100;
     letter-spacing: 1px;
@@ -190,7 +190,7 @@ img {
     letter-spacing: 3px;
   }
   p {
-    width: 50rem;
+    max-width: 50rem;
     letter-spacing: 1px;
   }
 }

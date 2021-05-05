@@ -38,4 +38,76 @@
       margin: 0 auto 10rem;
     }
   }
+
+  /* SKILL
+  =========================== */
+  .skill-img {
+    min-height: 110vh;
+    // width: 100%;
+  }
+  .skill-left {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    padding: 0 0rem;
+    width: 80%;
+  }
+  .skill-right {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 0rem;
+    width: 80%;
+  }
+  .progress__bar {
+    // width: 45rem;
+    margin: 20px 0;
+  }
+  .ovelay-skill {
+    display: none;
+  }
+
+  /* TEAM
+  =========================== */
+  .team {
+    &-content {
+      flex-direction: column;
+    }
+
+    &-item {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+  .team-overlayBox {
+    .overplayBox-title {
+      font-size: 2.2rem;
+    }
+
+    .overplayBox-desc {
+      font-size: 2rem;
+    }
+  }
+
+  .info-name {
+    font-size: 2rem;
+  }
+
+  .info-job {
+    font-size: 1.8rem;
+  }
+
+  .slider4 {
+    &-content {
+      grid-template-columns: 1fr;
+      row-gap: 5rem;
+      justify-content: space-around;
+    }
+
+    &-item {
+      h3 {
+        margin: 1.5rem 0;
+      }
+    }
+  }
 }

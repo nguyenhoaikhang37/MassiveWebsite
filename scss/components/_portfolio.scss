@@ -1,0 +1,115 @@
+#portfolio {
+  text-align: center;
+  .team-overlay {
+    .team-overlayBox {
+      width: 90%;
+      height: 80%;
+      justify-content: space-around;
+    }
+  }
+}
+
+.container-port {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 10rem 3rem 3rem;
+}
+
+.portfolio-content {
+  .filter-list {
+    text-align: center;
+    margin-bottom: 5rem;
+    .filter-item {
+      display: inline-block;
+      margin: 0 1.5rem;
+      letter-spacing: 3px;
+      font-size: 1.3rem;
+      color: #a9a8a8;
+      cursor: pointer;
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}
+
+.portfolio-listImg {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.portfolio-img {
+  position: relative;
+}
+
+.portfolio-content ul .mixitup-control-active {
+  color: #222 !important;
+}
+
+.portfolio-img:hover .social-icon {
+  transform: translateY(0);
+  opacity: 1;
+}
+.portfolio-img:hover .overplayBox-info {
+  transform: translateY(0);
+  opacity: 1;
+}
+.portfolio-img:hover .team-overlayBox {
+  opacity: 1;
+  visibility: visible;
+}
+
+.fa-search {
+  font-size: 3rem;
+}
+
+.overplayBox-desc1 {
+  color: #222;
+  letter-spacing: 4px;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+.overplayBox-desc2 {
+  color: grey;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+/* BANNER
+=========================== */
+.portfolio-banner {
+  background: #222222;
+}
+
+.container-banner {
+  padding: 5rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  align-items: center;
+
+  p:first-child {
+    color: white;
+    font-size: 1.4rem;
+  }
+
+  p:last-child {
+    color: white;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+
+  span {
+    color: $primary-color;
+  }
+}

@@ -40,3 +40,29 @@ function showSlides() {
   dots[slideIndex - 1].className += " active";
   setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
+
+//>ProcessBar
+window.onscroll = function (event) {
+  let progressBars = document.getElementsByClassName("progress__bar");
+  Array.from(progressBars).forEach((bar) => {
+    // console.dir(bar)
+
+    // window.scrollY: current scroll Position
+    // window.innerHeight: visible viewport height (not full html height)
+    // ele.offsetTop: length from top of page to element
+    // ele.clientHeight: height of element
+
+    let windowTop = window.scrollY;
+    let windowBot = windowTop + window.innerHeight;
+
+    // scroll when reach number "70%, 80%, 90%, ..." => minus about 20px
+    let eleTop = bar.offsetTop - 20;
+    let eleBot = eleTop + bar.clientHeight;
+    console.log(windowTop);
+    // If position of scrolling is in the range of visible element => true
+    //eleBot <= windowBot && eleTop >= windowTop
+    if (windowTop > 1000) {
+      bar.classList.add("active");
+    }
+  });
+};

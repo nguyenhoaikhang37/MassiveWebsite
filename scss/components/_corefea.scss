@@ -1,0 +1,59 @@
+#corefea {
+  text-align: center;
+}
+
+.corefea {
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+  }
+
+  &-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+  }
+}
+
+.right-item {
+  margin-bottom: 5rem;
+
+  p:first-child {
+    font-size: 3rem;
+    font-size: #e1e1e1;
+    opacity: 0.5;
+  }
+
+  p:nth-child(2) {
+    font-weight: 300;
+    color: black;
+    font-size: 1.6rem;
+    margin: 5px 0 2rem;
+  }
+}
+
+.btn-group {
+  display: flex;
+  align-items: stretch;
+  .btn:first-child {
+    background: #000;
+
+    &:hover {
+      background: $primary-color;
+    }
+  }
+  .btn:last-child {
+    border: 1px solid #000;
+    background: white;
+    color: black;
+    margin-left: 2rem;
+
+    &:hover {
+      background: #000;
+      color: white;
+    }
+  }
+}

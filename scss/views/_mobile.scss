@@ -2,10 +2,12 @@
 @media Screen and (max-width: 46.1875em) {
   html {
     font-size: 55%;
+    overflow-x: hidden;
   }
+
   #feature {
     .feature-desc {
-      width: 50rem;
+      max-width: 50rem;
       margin: 0 auto 10rem;
     }
   }
@@ -16,6 +18,134 @@
     &-item {
       width: 100%;
       margin-bottom: 6rem;
+    }
+  }
+  .text {
+    color: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // max-width: 10rem;
+  }
+
+  /* SKILL
+  =========================== */
+  .skill-img {
+    min-height: 100vh;
+    // width: 100%;
+  }
+  .skill-left {
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  .skill-right {
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    padding: 0 0rem;
+    width: 80%;
+  }
+
+  /* TEAM
+  =========================== */
+  .team-overlayBox {
+    .overplayBox-title {
+      font-size: 1.8rem;
+    }
+
+    .overplayBox-desc {
+      font-size: 1.7rem;
+    }
+  }
+  .info-name {
+    font-size: 1.8rem;
+  }
+
+  .info-job {
+    font-size: 1.5rem;
+  }
+
+  /* PORTFOLIO
+  =========================== */
+  #portfolio {
+    .portfolio-listImg {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    .portfolio-content {
+      .filter-item {
+        margin: 1rem 2rem;
+      }
+    }
+  }
+
+  .overplayBox-desc1 {
+    margin-top: 0;
+    font-size: 1.1rem;
+  }
+  .overplayBox-desc2 {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+
+  .container-banner {
+    padding: 3rem;
+    flex-direction: column;
+    align-items: flex-start;
+
+    p:last-child {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .corefea {
+    &-content {
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+    }
+  }
+
+  .service {
+    &-content {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .slider__content {
+    // justify-content: center;
+    align-items: flex-start;
+  }
+  .slider__img {
+    display: none;
+  }
+  .slider__info {
+    margin-top: 5rem;
+    width: 100%;
+    margin-bottom: 0;
+
+    p {
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
+    }
+  }
+  .slider__img {
+    width: 0;
+  }
+  .slick-dots {
+    bottom: 0;
+    right: -10px;
+  }
+
+  .slider2 {
+    &-content {
+      flex-direction: column;
+      justify-content: space-around;
     }
   }
 }

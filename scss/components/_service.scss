@@ -1,0 +1,52 @@
+#service {
+  text-align: center;
+}
+
+.service {
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0;
+  }
+
+  &-item {
+    padding: 50px;
+    border: 1px solid #f2f2f2;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    p:first-of-type {
+      margin: 3rem 0;
+      color: #000;
+      font-weight: 100;
+      letter-spacing: 1px;
+      font-size: 1.7rem;
+      transition: all 0.2s ease-in-out;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+    }
+  }
+
+  &-icon {
+    font-size: 4rem;
+    color: #999;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+  }
+}
+.service-item:hover .service-icon {
+  color: $primary-color;
+}
+.service-item:hover p:first-of-type {
+  color: white;
+}
+.service-item:hover {
+  background: #333;
+}
