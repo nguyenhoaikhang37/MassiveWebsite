@@ -1,0 +1,97 @@
+#price {
+  text-align: center;
+
+  .btn {
+    background: white;
+    color: black;
+    border: 1px solid #e8e8e8;
+    border-radius: 0;
+    width: 100%;
+    &:hover {
+      background: black;
+      color: white;
+    }
+  }
+
+  .btn-premium {
+    background: white;
+    color: black;
+    border: 1px solid #e8e8e8;
+    border-radius: 0;
+    width: 100%;
+    &:hover {
+      background: $primary-color;
+      color: white;
+      border-color: $primary-color;
+    }
+  }
+}
+
+.price {
+  &-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+  }
+
+  &-item {
+    padding: 5rem;
+    border: 1px solid #e8e8e8;
+    cursor: pointer;
+    p {
+      color: black;
+    }
+  }
+  &-premium {
+    background: #222;
+    p {
+      color: white;
+    }
+
+    .price-desc {
+      color: #676767;
+    }
+
+    .price-title {
+      color: $primary-color;
+    }
+
+    .price-box {
+      border-color: #676767;
+    }
+  }
+
+  &-title {
+    font-size: 1.7rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+  }
+
+  &-box {
+    padding-top: 4rem;
+    margin-top: 3.5rem;
+    border-top: 1px solid #e8e8e8;
+    padding-bottom: 3rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 1px solid #e8e8e8;
+  }
+
+  &-money {
+    font-size: 4rem;
+    span {
+      font-size: 1.2rem;
+    }
+  }
+
+  &-month {
+    font-size: 1.1rem;
+  }
+
+  &-desc {
+    line-height: 4rem;
+    margin-bottom: 3rem;
+    span {
+      display: block;
+    }
+  }
+}

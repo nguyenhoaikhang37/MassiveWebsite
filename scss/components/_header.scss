@@ -28,7 +28,7 @@ header {
       color: $primary-color;
     }
   }
-  &-list &-item .active {
+  &-list &-item .active1 {
     color: $primary-color;
   }
 
@@ -118,7 +118,7 @@ header {
       color: $primary-color;
     }
   }
-  .active {
+  .active1 {
     color: $primary-color;
   }
 }
@@ -178,6 +178,7 @@ img {
   left: 30%;
   transform: translate(-50%, -50%);
   max-width: 40rem;
+  animation: text 0.8s linear;
   h3 {
     font-weight: 100;
     letter-spacing: 1px;
@@ -192,6 +193,17 @@ img {
   p {
     max-width: 50rem;
     letter-spacing: 1px;
+  }
+}
+
+@keyframes text {
+  from {
+    opacity: 0;
+    top: -50%;
+  }
+  to {
+    opacity: 1;
+    top: 50%;
   }
 }
 
@@ -232,6 +244,7 @@ img {
   top: 100px;
 }
 
+.active,
 .dot:hover {
   background-color: #717171;
 }

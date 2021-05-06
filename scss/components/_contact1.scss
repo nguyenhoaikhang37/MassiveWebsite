@@ -1,0 +1,32 @@
+#contact1 {
+  text-align: center;
+  background: #f8f8f8;
+
+  .container {
+    max-width: 70rem;
+  }
+  .text-title {
+    color: $primary-color;
+    margin-bottom: 2rem;
+  }
+
+  .text-desc {
+    margin-bottom: 6rem;
+  }
+
+  .btn {
+    background: #000;
+    &:hover {
+      background: $primary-color;
+    }
+  }
+}
+
+.contact1-input {
+  display: flex;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 0 2rem;
+}

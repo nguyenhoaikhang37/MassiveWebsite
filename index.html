@@ -20,11 +20,16 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+
+    <div id="tb-preloader">
+      <div class="tb-preloader-wave"></div>
+  </div>
     <!-- ====================*HEADER*==================== -->
     <header>
         <div class="mySlides fade">
           <img src="images/bs1.jpg" style="width: 100%; height:100vh" />
-          <div class="text">
+          <div class="text"
+         >
             <h3>HI THERE !</h3>
             <h1>WE ARE MASSIVE</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa libero atque quod aspernatur, porro, nam?</p>
@@ -49,8 +54,8 @@
           </div>
         </div>
 
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
         <div class="dots">
           <span class="dot" onclick="currentSlide(1)"></span>
           <span class="dot" onclick="currentSlide(2)"></span>
@@ -62,15 +67,15 @@
       <div class="menu menu-pc">
         <a href="#"><img src="images/logo.png" alt="logo" class="logo" /></a>
         <ul class="menu-list">
-          <li class="menu-item"><a href="#" class="active">Home</a></li>
-          <li class="menu-item"><a href="#">About</a></li>
-          <li class="menu-item"><a href="#">Team</a></li>
-          <li class="menu-item"><a href="#">Portfolio</a></li>
-          <li class="menu-item"><a href="#">Services</a></li>
-          <li class="menu-item"><a href="#">Features</a></li>
-          <li class="menu-item"><a href="#">Blog</a></li>
-          <li class="menu-item"><a href="#">Price table</a></li>
-          <li class="menu-item"><a href="#">Contact</a></li>
+          <li class="menu-item"><a href="#" class="active1">Home</a></li>
+          <li class="menu-item"><a href="#feature">About</a></li>
+          <li class="menu-item"><a href="#team">Team</a></li>
+          <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+          <li class="menu-item"><a href="#service">Services</a></li>
+          <li class="menu-item"><a href="#corefea">Features</a></li>
+          <li class="menu-item"><a href="#blog">Blog</a></li>
+          <li class="menu-item"><a href="#price">Price table</a></li>
+          <li class="menu-item"><a href="#contact2">Contact</a></li>
         </ul>
         <i class="fal fa-bars menu-icon"></i>
       </div>
@@ -78,30 +83,30 @@
       <div class="menu menu-scroll">
         <a href="#"><img src="images/logo.png" alt="logo" class="logo" /></a>
         <ul class="menu-list">
-          <li class="menu-item"><a href="#" class="active">Home</a></li>
-          <li class="menu-item"><a href="#">About</a></li>
-          <li class="menu-item"><a href="#">Team</a></li>
-          <li class="menu-item"><a href="#">Portfolio</a></li>
-          <li class="menu-item"><a href="#">Services</a></li>
-          <li class="menu-item"><a href="#">Features</a></li>
-          <li class="menu-item"><a href="#">Blog</a></li>
-          <li class="menu-item"><a href="#">Price table</a></li>
-          <li class="menu-item"><a href="#">Contact</a></li>
+          <li class="menu-item"><a href="#" class="active1">Home</a></li>
+          <li class="menu-item"><a href="#feature">About</a></li>
+          <li class="menu-item"><a href="#team">Team</a></li>
+          <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+          <li class="menu-item"><a href="#service">Services</a></li>
+          <li class="menu-item"><a href="#corefea">Features</a></li>
+          <li class="menu-item"><a href="#blog">Blog</a></li>
+          <li class="menu-item"><a href="#price">Price table</a></li>
+          <li class="menu-item"><a href="#contact2">Contact</a></li>
         </ul>
         <i class="fal fa-bars menu-icon"></i>
       </div>
     </header>
     <div class="menu-click">
       <ul>
-        <li><a href="#" class="active">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">TEAM</a></li>
-        <li><a href="#">PORTFOLIO</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">FEATURES</a></li>
-        <li><a href="#">BLOG</a></li>
-        <li><a href="#">PRICE TABLE</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="#" class="active1">HOME</a></li>
+        <li><a href="#feature">ABOUT</a></li>
+        <li><a href="#team">TEAM</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#service">SERVICES</a></li>
+        <li><a href="#corefea">FEATURES</a></li>
+        <li><a href="#blog">BLOG</a></li>
+        <li><a href="#price">PRICE TABLE</a></li>
+        <li><a href="#contact2">CONTACT</a></li>
       </ul>
     </div>
 
@@ -385,16 +390,17 @@
 <!-- ====================*SERVICE*==================== -->
   <section id="service">
     <div class="container">
-      <h3 class="text-title">MASSIVE SERVICES</h3>
+      <h3 class="text-title" >MASSIVE SERVICES</h3>
       <p class="text-desc">Lid est laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats vitaes nemo minima rerums unsers sadips amets.
       </p>
       <div class="service-content">
-        <div class="service-item"><i class="fal service-icon fa-lightbulb"></i>
+        <div class="service-item" data-aos="zoom-in">
+          <i class="fal service-icon fa-lightbulb"></i>
   <p>CREATIVE DESIGN</p>
   <p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
         </div>
 
-        <div class="service-item"><i class="fal service-icon fa-boombox"></i>
+        <div class="service-item"  data-aos="zoom-in"><i class="fal service-icon fa-boombox"></i>
   <p>PROFESSIONAL CODE</p>
   <p>Fringilla augue at maximus vestibulum.
 
@@ -404,19 +410,19 @@
                           </div>
 
 
-        <div class="service-item"><i class="fal service-icon fa-computer-speaker"></i>
+        <div class="service-item"  data-aos="zoom-in"><i class="fal service-icon fa-computer-speaker"></i>
   <p>EASY CUSTOMIZE</p>
   <p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
         </div>
-        <div class="service-item"><i class="fal service-icon fa-film"></i>
+        <div class="service-item"  data-aos="zoom-in"><i class="fal service-icon fa-film"></i>
   <p>24/7 SUPPORT</p>
   <p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
         </div>
-        <div class="service-item"><i class="fal service-icon fa-video"></i>
+        <div class="service-item"  data-aos="zoom-in"><i class="fal service-icon fa-video"></i>
   <p>BOOTSTRAP</p>
   <p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
         </div>
-        <div class="service-item"><i class="fal service-icon fa-ruler-triangle"></i>
+        <div class="service-item"  data-aos="zoom-in"><i class="fal service-icon fa-ruler-triangle"></i>
   <p>CLEAN CODE</p>
   <p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
         </div>
@@ -425,7 +431,7 @@
   </section>
 
   <!-- ====================*SLIDER*==================== -->
-  <section id="slider1">
+  <section id="slider1" data-aos="zoom-in">
   <div class="slider__bg ">
   <div class="container sliderlib">
     <div class="slider__box">
@@ -486,21 +492,21 @@
       </p>
 
       <div class="corefea-content">
-        <div class="corefea-left">
+        <div class="corefea-left" data-aos="fade-right" data-aos-delay="200">
           <img src="images/tab-1.png" alt="">
         </div>
         <div class="corefea-right">
-          <div class="right-item">
+          <div class="right-item" data-aos="fade-left" data-aos-delay="200">
             <p>01</p>
             <p>MEGA MENU</p>
             <p>Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. Pellentesque eu quam sem, ac malesuada leo sem quam pellente.</p>
           </div>
-          <div class="right-item">
+          <div class="right-item" data-aos="fade-left" data-aos-delay="200">
               <p>02</p>
             <p>UNLIMITED PORTFOLIO GRID</p>
             <p>Pellentesque eu quam sem, ac malesuada leo sem quam pellente. Fringilla augue at maximus vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
           </div>
-          <div class="right-item">
+          <div class="right-item" data-aos="fade-left"data-aos-delay="200">
               <p>03</p>
             <p>HUGE SHORTCODE</p>
             <p>Augue at maximus Pellentesque eu quam sem, ac malesuada leo sem quam pellente. vestibulum. Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend.</p>
@@ -522,21 +528,21 @@
         <div class="slider2-item">
           <i class="far slider2-icon fa-smile"></i>
           <div class="slider2-info">
-            <h3>36</h3>
+            <h3 class="count-number">36</h3>
             <p>CLIENTS HANDLED</p>
           </div>
         </div>
         <div class="slider2-item">
           <i class="far slider2-icon fa-flag"></i>
           <div class="slider2-info">
-            <h3>29</h3>
+            <h3 class="count-number">29</h3>
               <p>PROJECT COMPLETED</p>
           </div>
         </div>
         <div class="slider2-item">
           <i class="far slider2-icon fa-bookmark"></i>
           <div class="slider2-info">
-            <h3>17</h3>
+            <h3 class="count-number">17</h3>
               <p>DESIGN AWARD WON</p>
           </div>
         </div>
@@ -545,39 +551,290 @@
   </div>
 </section>
 
+<!-- ====================*BLOG*==================== -->
+<section id="blog">
+  <div class="container">
+    <h3 class="text-title">BLOG</h3>
+    <p class="text-desc">Phasellus fringilla suscipit risus nec eleifend. Pellentesque eu quam sem, ac malesuada leo sem quam pellente. Awesome sliders give you the opportunity to showcase your content.
+    </p>
+    <div class="blog-content">
+      <div class="blog-item blog-img">
+        <img src="images/p1.jpg"  alt="">
+      </div>
+      <div class="blog-item blog-item-text">
+        <p>JULY 29, 2015</p>
+        <a class="blog-title">
+          MAURIS QUIS TVELIT LOREM. NAM NEQUE JUSTO SUSPENDISSE</a>
+          <ul>
+            <li><a class="blog-link" href="#">INTERFACE,</a></li>
+            <li><a class="blog-link" href="#">STANDARD,</a></li>
+          </ul>
+      </div>
+      <div class="blog-item blog-img">
+        <img src="images/p3.jpg"  alt="">
+      </div>
+      <div class="blog-item blog-item-text">
+        <p>JULY 29, 2015</p>
+        <a class="blog-title">
+          QUIS VELIT LOREM. NAM A NEQUE CONSECTETUR COMMODO</a>
+          <ul>
+            <li><a class="blog-link" href="#">INTERFACE,</a></li>
+            <li><a class="blog-link" href="#">STANDARD,</a></li>
+          </ul>
+      </div>
+      <div class="blog-item blog-imgtop">
+        <img src="images/p2.jpg" alt="">
+      </div>
+      <div class="blog-item blog-item-text">
+        <p>JULY 29, 2015</p>
+        <a class="blog-title">
+          COMMODO VELIT LOREM. NAM A NEQUE CONSECTETUR QUIS</a>
+          <ul>
+            <li><a class="blog-link" href="#">INTERFACE,</a></li>
+            <li><a class="blog-link" href="#">STANDARD,</a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================*SLIDER3*==================== -->
+<section id="slider3">
+  <div class="slider__bg3">
+<div class="container sliderlib">
+
+
+        <div>
+          <div class="slider3-item">
+            <img src="images/event_avatar1.jpg" alt="">
+            <p>Nam nec dui dolor. Curabitur in laoreet erat. Nam nec dui dolor. Aliquam varius dolor nunc, interdum commodo justoporttitor vitae. Quisque fermentum purus.</p>
+            <p class="slider3-name">- KEVIN PAGE -</p>
+            <p class="slider3-job">ABC</p>
+          </div>
+        </div>
+        <div>
+          <div class="slider3-item">
+            <img src="images/event_avatar3.jpg" alt="">
+            <p>Nam nec dui dolor. Curabitur in laoreet erat. Nam nec dui dolor. Aliquam varius dolor nunc, interdum commodo justoporttitor vitae. Quisque fermentum purus.</p>
+            <p class="slider3-name">- JOHN DOE -</p>
+            <p class="slider3-job">HEAD OF MARKETING, TB</p>
+          </div>
+        </div>
+        <div>
+          <div class="slider3-item">
+            <img src="images/event_avatar1.jpg" alt="">
+            <p>Nam nec dui dolor. Curabitur in laoreet erat. Nam nec dui dolor. Aliquam varius dolor nunc, interdum commodo justoporttitor vitae. Quisque fermentum purus.</p>
+            <p class="slider3-name">- LINDA SMITH -</p>
+            <p class="slider3-job">CEO, TB</p>
+          </div>
+
+    </div>
+
+</div>
+  </div>
+</section>
+<!-- ====================*VIDEO*==================== -->
+<section id="video-demo">
+  <div class="container">
+    <h3 class="text-title">WATCH VIDEO DEMO</h3>
+      <p class="text-desc">Phasellus fringilla suscipit risus nec eleifend. Pellentesque eu quam sem, ac malesuada leo sem quam pellente. Awesome sliders give you the opportunity to showcase your content.
+      </p>
+
+      <div class="video-content" data-aos="zoom-in" data-aos-delay="100">
+        <iframe width="525" height="264" src="https://www.youtube.com/embed/CevxZvSJLk8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+  </div>
+</section>
+
+<!-- ====================*SLIDER5*==================== -->
+<section id="slider5">
+
+  <div class="slider5-content">
+    <div class="slider5-left">
+      <p>NEWS</p>
+      <p>SOME SERVICES THAT WE PROVIDE OCCATIONALY</p>
+      <p>Phasellus fringilla suscipit risus nec eleifend. Pellentesque eu quam sem, ac malesuada leo sem quam pellente. Awesome sliders give you the opportunity to showcase your content.</p>
+    </div>
+    <div class="slider5-right">
+      <p>NEWS</p>
+      <p>EDITORS NOW USE AS THEIR DEFAULT MODEL</p>
+      <p>Fringilla suscipit risus nec eleifend. Pellentesque eu quam sem, ac malesuada leo sem quam pellente. Awesome sliders give you the opportunity to showcase your content.</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- ====================*PRICE*==================== -->
+<section id="price">
+  <div class="container">
+    <h3 class="text-title">PRICE TABLE</h3>
+      <p class="text-desc">Phasellus fringilla suscipit risus nec eleifend. Pellentesque eu quam sem, ac malesuada leo sem quam pellente. Awesome sliders give you the opportunity to showcase your content.
+      </p>
+
+      <div class="price-content">
+        <div class="price-item" data-aos="fade-right" data-aos-dutation="1000">
+          <p class="price-title">STARTER</p>
+          <div class="price-box">
+            <p class="price-money">$ 29<span>.00</span></p>
+            <p class="price-month">PER MONTH</p>
+          </div>
+          <p class="price-desc"><span>24/7 Tech Suport</span>
+            <span>Lorem ipsum dolor.</span>
+            <span>ipsum dolor sit amet.</span>
+            <span>dolor sit amet.</span></p>
+            <a href="#" class="btn">PURCHASE THIS PLAN</a>
+        </div>
+
+        <div class="price-item price-premium" data-aos="fade-up" data-aos-dutation="1000">
+          <p class="price-title">PREMIUM</p>
+          <div class="price-box">
+            <p class="price-money">$ 49<span>.00</span></p>
+            <p class="price-month">PER MONTH</p>
+          </div>
+          <p class="price-desc"><span>24/7 Tech Suport</span>
+            <span>Lorem ipsum dolor.</span>
+            <span>ipsum dolor sit amet.</span>
+            <span>dolor sit amet.</span></p>
+            <a href="#" class="btn btn-premium">PURCHASE THIS PLAN</a>
+        </div>
+
+        <div class="price-item" data-aos="fade-left" data-aos-dutation="1000">
+          <p class="price-title">ENTERPRISE</p>
+          <div class="price-box">
+            <p class="price-money">$ 79<span>.00</span></p>
+            <p class="price-month">PER MONTH</p>
+          </div>
+          <p class="price-desc"><span>24/7 Tech Suport</span>
+            <span>Lorem ipsum dolor.</span>
+            <span>ipsum dolor sit amet.</span>
+            <span>dolor sit amet.</span></p>
+            <a href="#" class="btn">PURCHASE THIS PLAN</a>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- ====================*CONTACT1*==================== -->
+<section id="contact1" data-aos="zoom-in">
+  <div class="container">
+    <h3 class="text-title">DON’T WANNA PURCHASE NOW?</h3>
+    <p class="text-desc">subscribe to get in touch
+    </p>
+    <div class="contact1-input">
+      <input type="text" placeholder="Enter your email address">
+      <a href="#" class="btn">SUBCRIBE</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ====================*CLIENT*==================== -->
+<section id="client">
+  <div class="container">
+    <h3 class="text-title">OUR CLIENTS</h3>
+      <p class="text-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut explicabo iusto quaerat
+      </p>
+      <div class="client-box responsive">
+        <div><img src="images/c-2.png" alt=""></div>
+        <div><img src="images/c-3.png" alt=""></div>
+        <div><img src="images/c-4.png" alt=""></div>
+        <div><img src="images/c-5.png" alt=""></div>
+        <div><img src="images/c-6.png" alt=""></div>
+        <div><img src="images/c-7.png" alt=""></div>
+        <div><img src="images/c-8.png" alt=""></div>
+      </div>
+  </div>
+</section>
+
 
 <!-- ====================*SLIDER4*==================== -->
 <section id="slider4">
   <div class="slider__bg4">
     <div class="container">
-      <div class="container">
+
         <div class="slider4-content">
           <div class="slider4-item">
-            <i class="fal slider4-icon fa-map-marked-alt"></i>
+            <i class="fal slider4-icon fa-map-marked-alt" ></i>
               <h3>LOCATION</h3>
               <p>Upper Level, Overseas Passenger
                 Terminal, The Rocks, Sydney 2000</p>
           </div>
           <div class="slider4-item">
-            <i class="fal slider4-icon fa-map-marked-alt"></i>
+            <i class="fal slider4-icon fa-tablet"></i>
               <h3>CALL US</h3>
               <p>Any time. We are open 24/7<br/>
                 +1 2345-67-89000</p>
           </div>
           <div class="slider4-item">
-            <i class="fal slider4-icon fa-map-marked-alt"></i>
+            <i class="fal slider4-icon fa-envelope-open-text"></i>
               <h3>MAIL US</h3>
               <p>get support via email<br/>
                 mail@massivetheme.com</p>
           </div>
-        </div>
+
       </div>
     </div>
   </div>
 </section>
+
+
+<!-- ====================*CONTACT2*==================== -->
+<section id="contact2" >
+  <div class="container">
+    <h3 class="text-title">DROP US A LINE</h3>
+    <p class="text-desc">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus. Nam libero tempore
+    </p>
+    <form action="">
+      <div class="contact2-group">
+        <div class="group1">
+          <input type="text"  placeholder="Name*">
+          <input type="email"  placeholder="Email*">
+          <input type="text"  placeholder="Phone*">
+        </div>
+        <div class="group2">
+          <textarea placeholder="Comment" cols="30" rows="10"></textarea>
+          <a href="#" class="btn">SEND MESSAGE</a>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ====================*FOOTER*==================== -->
+<footer>
+  <div class="container-footer">
+    <div class="footer-info">
+      <div >
+        <img src="images/logo.png" class="footer__img-logo"    alt=""></div>
+      <p class="text-desc">THE ULTIMATE THEME WITH MASSIVE COLLECTION
+      </p>
+    </div>
+    <div class="footer-social">
+      <a href="#"><i class="fab footer-icon fa-facebook-f"></i></a>
+      <a href="#"><i class="fab footer-icon fa-twitter"></i></a>
+      <a href="#"><i class="fab footer-icon fa-dribbble"></i></a>
+      <a href="#"><i class="fab footer-icon fa-google-plus-g"></i></a>
+      <a href="#"><i class="fab footer-icon fa-behance"></i></a>
+    </div>
+    <div class="footer-end">
+      <p>© MASSIVE 2014.</p>
+      <p>BUILDING YOUR SITE WITH LOTS OF FUN</p>
+    </div>
+  </div>
+</footer>
+<div class="backToTop">
+  <a href="#" class="cd-top text-replace js-cd-top">
+    <i class="fas fa-arrow-circle-up"></i>
+  </a>
+</div>
+
     <!-- ====================*LINK JS*==================== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+    integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+    crossorigin="anonymous"
+  ></script>
     <script src="lib/slick/slick.min.js"></script>
     <script>
       $(document).ready(function () {
@@ -603,14 +860,14 @@
             {
               breakpoint: 600,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 1,
               },
             },
             {
               breakpoint: 480,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 1,
               },
             },
@@ -619,6 +876,44 @@
             // instead of a settings object
           ],
         });
+      });
+
+      $(document).ready(function () {
+        $('.responsive').slick({
+  dots: false,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
       });
     </script>
 <!-- AOS Scroll -->
@@ -638,6 +933,18 @@
 
 <!-- Lightbox -->
 <script src="lib/lightbox/lightbox.min.js"></script>
+
+<!-- Countup -->
+
+ <script src="lib/jquery.countup.min.js"></script>
+ <script>
+   $(".count-number").countUp();
+ </script>
+
+ <!-- --backToTop-- -->
+ <script src="lib/backtotop/util.js"></script>
+ <script src="lib/backtotop/main.js"></script>
+
     <script src="js/app.js"></script>
 
   </body>

@@ -203,3 +203,29 @@ button:hover {
     color: white;
   }
 }
+
+//Back To Top
+.backToTop {
+  position: fixed;
+  bottom: 3rem;
+  right: 2.5rem;
+  a {
+    opacity: 0;
+  }
+  i {
+    font-size: 3.3rem;
+    color: rgba(0, 0, 0, 0.6);
+    border-radius: 0;
+    i:hover {
+      color: #d6b161;
+    }
+  }
+}
+.backToTop .cd-top--is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.backToTop .cd-top--fade-out {
+  opacity: 0.5;
+}

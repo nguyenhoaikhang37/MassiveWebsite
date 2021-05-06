@@ -96,18 +96,36 @@
   .info-job {
     font-size: 1.8rem;
   }
-
+  .slider__bg4 {
+    height: 70rem;
+  }
   .slider4 {
     &-content {
       grid-template-columns: 1fr;
-      row-gap: 5rem;
+      row-gap: 3rem;
       justify-content: space-around;
+      column-gap: 0px;
     }
 
     &-item {
       h3 {
         margin: 1.5rem 0;
       }
+    }
+  }
+  .price {
+    &-content {
+      grid-template-columns: 1fr;
+      row-gap: 3rem;
+    }
+  }
+}
+
+@media Screen and (max-width: 769px) {
+  .blog {
+    &-content {
+      grid-template-columns: 1fr;
+      gap: 10rem;
     }
   }
 }
