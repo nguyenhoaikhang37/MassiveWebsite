@@ -446,6 +446,12 @@ img {
           animation: text 0.8s linear;
 }
 
+.text h3,
+.text h1,
+.text p {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
 .text h3 {
   font-weight: 100;
   letter-spacing: 1px;

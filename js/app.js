@@ -19,46 +19,36 @@ menuBar.addEventListener('click', () => {
   menuClick.classList.toggle('show-menu');
 });
 
-var slideIndex = 0;
-showSlides();
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
-function showSlides() {
+
+function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName('mySlides');
   var dots = document.getElementsByClassName('dot');
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = 'none';
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(' active', '');
   }
   slides[slideIndex - 1].style.display = 'block';
   dots[slideIndex - 1].className += ' active';
-  setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
-
-//>ProcessBar
-window.onscroll = function (event) {
-  let progressBars = document.getElementsByClassName('progress__bar');
-  Array.from(progressBars).forEach(bar => {
-    let windowTop = window.scrollY;
-    let windowBot = windowTop + window.innerHeight;
-
-    // scroll when reach number "70%, 80%, 90%, ..." => minus about 20px
-    let eleTop = bar.offsetTop - 20;
-    let eleBot = eleTop + bar.clientHeight;
-    console.log(windowTop);
-    if (windowTop > 1000) {
-      bar.classList.add('active');
-    }
-  });
-};
 
 //> Loading
 var pre = document.querySelector('#tb-preloader');
@@ -67,4 +57,4 @@ function myFunc() {
   pre.style.display = 'none';
 }
 
-window.addEventListener('load', setTimeout(myFunc, 0)); //3500
+window.addEventListener('load', setTimeout(myFunc, 3000)); //3500
