@@ -1,6 +1,7 @@
 const menuScroll = document.querySelector('.menu-scroll');
 const menuBar = document.querySelector('.menu-scroll .menu-icon');
 const menuClick = document.querySelector('.menu-click');
+const menus = document.querySelectorAll('.menu-click ul li a');
 
 window.addEventListener('scroll', () => {
   const scrollHeight = window.pageYOffset;
@@ -50,11 +51,30 @@ function showSlides(n) {
   dots[slideIndex - 1].className += ' active';
 }
 
+for (let i = 0; i < menus.length; i++) {
+  menus[i].onclick = function () {
+    menuClick.classList.remove('show-menu');
+  };
+}
+
+window.onscroll = function (event) {
+  let progressBars = document.getElementsByClassName('progress__bar');
+  Array.from(progressBars).forEach(bar => {
+    let windowTop = window.scrollY;
+    let windowBot = windowTop + window.innerHeight;
+    let eleTop = bar.offsetTop - 20;
+    let eleBot = eleTop + bar.clientHeight;
+
+    if (windowTop > 1000) {
+      bar.classList.add('active');
+    }
+  });
+};
+
 //> Loading
 var pre = document.querySelector('#tb-preloader');
 
 function myFunc() {
   pre.style.display = 'none';
 }
-
-window.addEventListener('load', setTimeout(myFunc, 3000)); //3500
+window.addEventListener('load', () => setTimeout(myFunc, 2000)); //3500
