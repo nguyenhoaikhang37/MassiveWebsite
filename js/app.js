@@ -77,4 +77,4 @@ var pre = document.querySelector('#tb-preloader');
 function myFunc() {
   pre.style.display = 'none';
 }
-window.addEventListener('load', () => setTimeout(myFunc, 2000)); //3500
+window.addEventListener('load', myFunc); //3500
